@@ -14,6 +14,7 @@ using namespace std;
 
 // lista de adjacencia
 vector<pair<int, int>>* LA;
+vector<pair<int, int>>* LA_modificado;
 
 // numero de vertices do grafo
 int n;
@@ -74,7 +75,7 @@ void dijkstra(int org)
 
 int main()
 {
-    ifstream arquivo("02.in");
+    ifstream arquivo("Casos-de-TesteMania-de-Par(BeeCrowd 1931)/1.in");
     if(arquivo){
         arquivo >> n >> m;
     
@@ -89,17 +90,8 @@ int main()
             v--;
             LA[u].push_back(make_pair(v, p));
         }
-        /*
-        for(int i = 0; i < n; i++)
-        {
-            cout << "vertice " << i+1 << ": ";
-            for(int j = 0; j < (int) LA[i].size(); j++)
-            {
-                cout << "(" << LA[i][j].first +1 << ", " << LA[i][j].second << ") ";
-            }
-            cout << endl;
-        }
-        */
+        
+        for(int i =0; i < LA)
 
         dijkstra(0);
     
